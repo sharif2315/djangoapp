@@ -1,0 +1,14 @@
+version: '3.2'
+
+services:
+  postgres:
+    image: postgres
+    volumes:
+      - db-data:/var/lib/postgresql/data/
+    env_file: ./postgres/.db.env
+  web:
+    depends_on:
+      - postgres
+
+volumes:
+  db-data:
