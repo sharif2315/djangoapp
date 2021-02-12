@@ -26,7 +26,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # DEBUG = True
 DEBUG = bool(int(os.getenv('DJANGO_DEBUG', 0)))
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['178.62.48.104']
 if DEBUG:
     ALLOWED_HOSTS = ['*']
 
