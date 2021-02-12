@@ -20,3 +20,6 @@ services:
     volumes:
       - ./nginx/:/etc/nginx/conf.d
       - static_files:/static_files
+
+volumes:
+  static_files:
